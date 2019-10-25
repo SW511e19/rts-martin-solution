@@ -1,5 +1,7 @@
-import dispenser_scan
-import run_slave_motor
+from EV3Main import dispenser_scan
+from EV3Main import run_slave_motor
+from Network import host
+
 from ev3dev2.motor import LargeMotor, OUTPUT_C, SpeedPercent
 
 push = LargeMotor(OUTPUT_C)
