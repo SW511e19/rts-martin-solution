@@ -13,4 +13,6 @@ class Client():
     def sendmsg(self, message):
         self.s.send(message)
 
-    
+    def recvmsg(self):
+        message = self.s.recv(4)
+        return message
