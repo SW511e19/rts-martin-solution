@@ -8,7 +8,7 @@ m1 = LargeMotor(OUTPUT_C)
 m2 = LargeMotor(OUTPUT_B)
 
 box_number = 0 #THE CURRENT BOX WE ARE AT
-speed = -15
+speed = -25
 emergency_escape = 0
 
 def start_motor(speed):
@@ -21,7 +21,7 @@ def stop_motor():
 
 def calibrate(speed):
     start_motor(speed)
-    time.sleep(5)
+    time.sleep(10)
     stop_motor()
     run(1, -40)
 
