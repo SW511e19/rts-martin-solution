@@ -10,8 +10,10 @@ def run(speed, seconds):
     time.sleep(seconds)
     print("Ran with " + str(speed) + " speed for " + str(seconds) + " time" )
 
+
+
 count = 0
-while count < 2:
+while count < 20:
     run(50, 0.75)
     run(-50, 0.75)
     count += 1
