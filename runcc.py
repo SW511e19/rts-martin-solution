@@ -20,16 +20,18 @@ def reset(speed, seconds):
     print("Ran with " + str(speed) + " speed for " + str(seconds) + " time" )
 
 count = 0
-while count < 100:
+while count <= 20:
     #reset(-50, 0.1)
-    run(50, 0.03)
-    reset(10, 0.001)
+    run(-50, 0.03)
+    if count % 10 == 0:
+        print("reset")
+        reset(20, 0.1)
     #run(-50, 3)
     #reset(20, 0.1)
-    count += 1
     if(colorsensor.color == 6):
         print(colorsensor.color)
     print("count: " + str(count))
+    count += 1
 
 
 m1.on(SpeedPercent(0))
