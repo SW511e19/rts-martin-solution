@@ -20,7 +20,7 @@ def reset(speed, seconds):
     print("Ran with " + str(speed) + " speed for " + str(seconds) + " time" )
 
 count = 0
-while count <= 20:
+while count <= 40:
     #reset(-50, 0.1)
     run(-50, 0.03)
     if count % 10 == 0:
